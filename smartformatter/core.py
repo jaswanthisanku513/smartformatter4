@@ -1,8 +1,6 @@
 import re
 import inflect
 
-def format_name(name):
-    return ' '.join([w.capitalize() for w in name.strip().split()])
 
 def format_phone(phone):
     digits = re.sub(r'\D', '', phone)
